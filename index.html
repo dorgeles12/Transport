@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -7,8 +6,249 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Transport</title>
-</head>
-<body>
 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="" id="loader"></div>
+    <!-- Entete -->
+    <header>
+        <!-- Logo & acces rapide container -->
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo"></div>
+            <!-- Acces rapide -->
+            <div class="quick-access">
+                <div class="top-row">
+                    <span>
+                        <a href="#">FR<a>|<a href="#">EN</a>
+                    </span>
+                    <span>
+                        <a href="#">
+                            <i class="fa fa-phone" style="transform:rotateY(180deg);"></i>
+                            Nous contacter
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                            <i class="fa fa-user-plus"></i>
+                            Inscription
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                            <i class="fa fa-user"></i>
+                            Connexion
+                        </a>
+                    </span>
+                </div>
+                <div class="bottom-row">
+                    <span>Vous etes ici</span>
+                    <span>
+                        <a href="index.html">Home</a>
+                        &gt;
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- Barre de navigation -->
+        <nav class="bordered">
+            <!-- nav -->
+            <div class="links">
+                <a href="index.html">Accueil</a>
+                <a href="#">Acheter un Billet</a>
+                <a href="#">Reserver</a>
+                <a href="#">Services</a>
+            </div>
+            <!-- search -->
+            <form action="">
+                <div class="form-group">
+                    <input type="search">
+                    <button class="fa fa-search"></button>
+                </div>
+            </form>
+        </nav>
+    </header>
+    <!-- Corps -->
+    <main>
+        <!-- Section du slider -->
+        <section class="showcase">
+            <!-- Bloc acheter un billet -->
+            <div class="buy bordered">
+                <h4 class="label bordered">Acheter un billet</h4>
+                <!-- Formulaire de recherche -->
+                <form action="">
+                    <!-- Checker Aller/Retour -->
+                    <div class="form-group">
+                        <button class="toggle">Aller Simple</button>
+                        <!-- <button class="toggle">Aller Retour</button> -->
+                    </div>
+                    <!--  -->
+                    <div class="form-group">
+                        <label for="lieu-depart">
+                            <i class="fa fa-map-marker"></i>
+                            <input type="text" placeholder="Départ de">
+                            <!-- <select name="lieu-départ" id="">
+                                <option value="">Départ de</option>
+                                <option value="">Abidjan</option>
+                            </select> -->
+                        </label>
+                        <label for="lieu-arrivee">
+                            <i class="fa fa-flag"></i>
+                            <input type="text" placeholder="Arrivée à">
+                            <!-- <select name="lieu-arrivee" id="">
+                                <option value="">Choisissez une destination</option>
+                                <option value="Bouaké">Bouaké</option>
+                            </select> -->
+                        </label>
+                    </div>
+                    <!--  -->
+                    <div class="form-group">
+                        <label for="">Date</label>
+                        <input type="date" placeholder="   /   /   ">
+                        <!-- <label for="">Date</label>
+                        <input type="date" placeholder="   /   /   "> -->
+                    </div>
+                    <!--  -->
+                    <div class="form-group">
+                        <label for="">
+                            <i class="fa fa-users"></i>
+                            <input type="text">
+                        </label>
+                        <label for="">
+                            <i class="fa fa-bus"></i>
+                            <select name="" id="" aria-placeholder="Compagnie">
+                                <option value="">UTB</option>
+                            </select>
+                        </label>
+                    </div>
+                    <button>Rechercher</button>
+                </form>
+            </div>
+            <!-- Bloc floatant services -->
+            <div class="citation bordered">
+                <h3 class="label">
+                    Un peu de texte en fonction de l'image du slide
+                </h3>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ut nobis deserunt neque quas numquam quasi, sapiente sunt
+                    id vero omnis ab cumque voluptatem delectus!
+                </p>
+                <a href="#" class="readmore">
+                    En savoir plus &gt;
+                </a>
+            </div>
+            <!-- Boutons du slider -->
+            <div class="slider-buttons">
+
+            </div>
+        </section>
+        <!-- Section promotions -->
+        <section class="promotions">
+            <h2 class="title">Promotions</h2>
+            <!-- Bloc promo principale -->
+            <div class="main-promo bordered">
+                <div class="text">
+                    <h3 class="label">La saint valentin est de retour</h3>
+                    <div class="pourcentage">
+                        -90%
+                    </div>
+                    <span>Sur Tous vos voyages</span>
+                    <span>Du 10 au 18 février</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, praesentium.</p>
+                </div>
+                <div class="img bordered">
+                    <img src="" alt="" class="image">
+                </div>
+                <img src="" alt="" class="image">
+            </div>
+            <!-- Container pour promo secondaires -->
+            <div class="container">
+                <!-- Bloc promo secondaire -->
+                <div class="promo bordered">
+                    <h4 class="label">Destination</h4>
+                    <div class="pourcentage">-30%</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam incidunt, aspernatur pariatur.</p>
+                    <a href="" class="readmore">J'en profite ! &gt;</a>
+                </div>
+                <!-- Bloc promo secondaire -->
+                <div class="promo bordered">
+                    <h4 class="label">Destination</h4>
+                    <div class="pourcentage">-30%</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam incidunt, aspernatur pariatur.</p>
+                    <a href="" class="readmore">J'en profite ! &gt;</a>
+                </div>
+                <!-- Bloc promo secondaire -->
+                <div class="promo bordered">
+                    <h4 class="label">Destination</h4>
+                    <div class="pourcentage">-30%</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam incidunt, aspernatur pariatur.</p>
+                    <a href="" class="readmore">J'en profite ! &gt;</a>
+                </div>
+            </div>
+            <a href="" class="readmore redirect">
+                Plus de promos
+            </a>
+        </section>
+        <!-- Section destinations -->
+        <section class="destinations">
+            <h2 class="title">Meilleures destinations</h2>
+            <div class="container">
+                <!-- Bloc destination -->
+                <div class="destination bordered">
+                    <span class="price">
+                        A partir de 6000 F
+                    </span>
+                    <span class="lieu">
+                        Daloa, Côte d'Ivoire
+                    </span>
+                </div>
+                <!-- Bloc destination -->
+                <div class="destination bordered">
+                    <span class="price">
+                        A partir de 12000 F
+                    </span>
+                    <span class="lieu">
+                        Korhogo
+                    </span>
+                </div>
+                <!-- Bloc destination -->
+                <div class="destination bordered">
+                    <span class="price">
+                        A partir de 26000 F
+                    </span>
+                    <span class="lieu">
+                        Accra, Ghana
+                    </span>
+                </div>
+            </div>
+            <a href="" class="readmore redirect">
+                Plus de promos
+            </a>
+        </section>
+        <!-- Section newsletter -->
+        <section class="newsletter">
+            <div class="text">
+                <h4 class="label">
+                    Souscrivez à notre newsletter
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, nostrum.</p>
+            </div>
+            <form action="">
+                <input type="email">
+                <button>souscrire</button>
+            </form>
+        </section>
+    </main>
+    <!-- Pied -->
+    <footer>
+
+    </footer>
 </body>
+
 </html>
