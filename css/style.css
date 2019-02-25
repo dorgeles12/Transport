@@ -6,6 +6,11 @@ a{
     text-decoration: none;
 }
 /* Floating Classes */
+.bg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .title{
     font-size: 1.6em;
     text-align: center;
@@ -90,6 +95,7 @@ nav form input{
     position: relative;
     height: 500px;
     background-color: aqua;
+    background-image: url('../img/bus.jpeg');
 }
 .showcase .buy, .citation{
     position: absolute;
@@ -124,8 +130,8 @@ nav form input{
 }
 .showcase .citation{
     right: 10%;
-    background-color: pink;
-    padding: 5px;
+    background-color: rgba(255,255,255,.7);
+    padding: 10px;
 }
 /* Section Promotions */
 .promotions {
@@ -157,8 +163,19 @@ nav form input{
 }
 .promo{
     flex-basis: 30%;
+    height: 40vh;
     padding: 20px;
     margin: 10px 0;
+    color:#fff;
+}
+#promo1{
+    background-image: url('../img/city.jpeg');
+}
+#promo2{
+    background-image: url('../img/city-cloud.jpeg');
+}
+#promo3{
+    background-image: url('../img/city-sydney.jpeg');
 }
 /* Destinations */
 .destinations{
