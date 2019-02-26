@@ -75,5 +75,11 @@ img{
 }
 /* PROMOTION */
 /* DESTIATION */
+.destination{
+    background-image: url('../img/city-sydney.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /* NEWSLETTER */
 /* FOOTER */
