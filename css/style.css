@@ -1,211 +1,67 @@
-*{
-    box-sizing: border-box;
+:root{
+    --corail:#df6d14;
+    --citrouille:#ff8100;
+    --rouge:#ef040d;
+    --vert:#34c924;
 }
 /* GENERAL */
+*{
+    font-family: 'Montserra', sans-serif;
+}
+body{
+    padding: 5px 0;
+}
+ul, ol{
+    list-style-type: none;
+}
 a{
     text-decoration: none;
 }
-/* Floating Classes */
-.bg{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.title{
-    font-size: 1.6em;
-    text-align: center;
-    text-transform: uppercase;
-}
-.title::before, .title::after{
-    content: "----------------";
-    margin: 50px;
-    width: 50%;
-}
-.bordered{
-    border: 1px solid #444;
-}
-body{
-
-}
-/* Header */
-header{
-
-}
-header .container{
-    display: flex;
-    justify-content: space-between;
-    height: 90px;
-    margin-bottom: 15px;
-}
-header .container .logo{
-    background-color: blueviolet;
-    flex-basis: 20%;
-}
-header .container .quick-access{
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-    background-color: green;
-}
-header .container .quick-access .top-row{
-    flex-basis:;
-    background-color: red;
-}
-header .container .quick-access .top-row span a{
-
-}
-nav{
-    position: relative;
-    z-index: 2;
-    background-color: orange;
-    display: flex;
-    align-items: center;
-    height: 50px;
-    width: 90%;
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
     margin: auto;
-    margin-top: -40px;
-    margin-bottom: -30px;
 }
-nav .links{
-    flex-basis: 80%;
+.links{
+
 }
-nav .links a{
-    border-left: 1px solid black;
+/* HEADER */
+#header ul li{
+    display: inline;
 }
-nav .links a:first-child{
-    border: none;
+.header-top li + li:before{
+    content: "|";
 }
-nav .links a{
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 1.3em;
+/* NAVBAR */
+/* SHOWCASE */
+.carousel-container{
+    position: relative;
+}
+/* ACHETER UN BILLET */
+.buyticket{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+.floater-div{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 10px;
+}
+.floater-div .form-group{
     padding: 5px;
 }
-nav .form-group{
-    flex-basis: 15%;
-}
-nav form input{
-
-}
-
-/* Main */
-/* Showcase */
-/* Acheter un billet class */
-.showcase{
-    position: relative;
-    height: 500px;
-    background-color: aqua;
-    background-image: url('../img/bus.jpeg');
-}
-.showcase .buy, .citation{
-    position: absolute;
-    top: 40%;
-    transform: translateY(-40%);
-    width: 30%;
-}
-.showcase .buy{
-    left: 5%;
-    height: 60%;
-    box-shadow: 1px 1px 3px;
-    padding-top: 60px;
-    display: flex;
-
-}
-.showcase .buy .label{
-    position: absolute;
-    top: -40px;
-    left: 20px;
-    background-color: yellow;
-    display: inline-block;
-    padding: 10px;
-    text-transform: uppercase;
-
-}
-.showcase .buy form{
-    display: grid;
+.floater-div input[type="submit"]{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     width: 100%;
+    border-radius: 0 0 10px 10px;
 }
-.showcase .buy form .form-group{
-    padding: 5px;
-}
-.showcase .citation{
-    right: 10%;
-    background-color: rgba(255,255,255,.7);
-    padding: 10px;
-}
-/* Section Promotions */
-.promotions {
-}
-.promotions .main-promo{
-    display: grid;
-    grid-template-columns: 7fr 3fr;
-    grid-template-rows: auto;
-}
-.promotions .main-promo .text{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(4, auto); 
-}
-.promotions .main-promo .text .label{
-    grid-area: 1/1/3/4;
-    background-color: beige;
-}
-.promotions .main-promo .text .pourcentage{
-    grid-area: 2/1/4/2;
-    font-size: 4em;
-}
-.promotions .main-promo span:first-child{
-    grid-area: 2/2/3/5;
-}
-.promotions .container{
-    display: flex;
-    justify-content: space-around;
-}
-.promo{
-    flex-basis: 30%;
-    height: 40vh;
-    padding: 20px;
-    margin: 10px 0;
-    color:#fff;
-}
-#promo1{
-    background-image: url('../img/city.jpeg');
-}
-#promo2{
-    background-image: url('../img/city-cloud.jpeg');
-}
-#promo3{
-    background-image: url('../img/city-sydney.jpeg');
-}
-/* Destinations */
-.destinations{
-
-}
-.destinations .container{
-    display: flex;
-    justify-content: space-around;
-    margin: 10px 0;
-}
-.destinations .destination{
-    flex-basis: 30%;
-}
-/* Newsletter */
-.newsletter {
-    display: grid;
-    grid-template-columns: 50% 40%;
-    grid-template-rows: auto;
-    align-items: center;
-    justify-content: space-around;
-    width: 90%;
-    margin: auto;
-}
-.newsletter .text{
-
-}
-.newsletter form input{
-    width: 60%;
-}
-.newsletter form button{
-    width: auto;
-    border-radius: 5px;
-}
+/* PROMOTION */
+/* DESTIATION */
+/* NEWSLETTER */
+/* FOOTER */

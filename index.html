@@ -8,248 +8,411 @@
     <title>Transport</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>
+    <!-- CDN -->
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div class="" id="loader"></div>
-    <!-- Entete -->
-    <header>
-        <!-- Logo & acces rapide container -->
-        <div class="container">
-            <!-- Logo -->
-            <div class="logo"></div>
-            <!-- Acces rapide -->
-            <div class="quick-access">
-                <div class="top-row">
-                    <span>
-                        <a href="#">FR<a>|<a href="#">EN</a>
-                    </span>
-                    <span>
-                        <a href="#">
-                            <i class="fa fa-phone" style="transform:rotateY(180deg);"></i>
-                            Nous contacter
-                        </a>
-                    </span>
-                    <span>
-                        <a href="#">
-                            <i class="fa fa-user-plus"></i>
-                            Inscription
-                        </a>
-                    </span>
-                    <span>
-                        <a href="#">
-                            <i class="fa fa-user"></i>
-                            Connexion
-                        </a>
-                    </span>
+    <!-- HEADER -->
+    <section id="header">
+        <div class="container-fluid">
+            <div class="row header-top">
+                <div class="col-md-2 logo">
+                    <img src="img/maajik.jpg" alt="" class="img-rounded">
+                    <div class="text">
+                        <h3>
+                            Voyager<span>.ci</span>
+                        </h3>
+                    </div>
                 </div>
-                <div class="bottom-row">
-                    <span>Vous etes ici</span>
-                    <span>
-                        <a href="index.html">Home</a>
-                        &gt;
-                    </span>
+                <div class="col-md-6 col-md-push-4">
+                    <div class="row">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="fa fa-globe"></span>
+                                    <span>FR</span> | <span style="color:grey;">EN</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-phone"></span>Nous Contacter</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-user-plus"></span>Inscription</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-user"></span>Connexion</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 
+                    <div class="row">
+                        <ul class="breadcrumb">
+                            <li><a href="#">Accueil</a></li>
+                            <li></li>
+                        </ul>
+                    </div> -->
                 </div>
+            </div> <!-- Row -->
+        </div> <!-- Container fluid -->
+        <div class="container navbar col-md-10">
+            <div class="col-md">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acheter un billet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reserver</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <!-- Barre de navigation -->
-        <nav class="bordered">
-            <!-- nav -->
-            <div class="links">
-                <a href="index.html">Accueil</a>
-                <a href="#">Acheter un Billet</a>
-                <a href="#">Reserver</a>
-                <a href="#">Services</a>
-            </div>
-            <!-- search -->
-            <form action="">
-                <div class="form-group">
-                    <input type="search">
-                    <button class="fa fa-search"></button>
-                </div>
-            </form>
-        </nav>
-    </header>
-    <!-- Corps -->
-    <main>
-        <!-- Section du slider -->
-        <section class="showcase bg">
-            <!-- Bloc acheter un billet -->
-            <div class="buy bordered">
-                <h4 class="label bordered">Acheter un billet</h4>
-                <!-- Formulaire de recherche -->
-                <form action="">
-                    <!-- Checker Aller/Retour -->
+            <div class="col-md-4">
+                <form action="" role="form">
                     <div class="form-group">
-                        <button class="toggle">Aller Simple</button>
-                        <!-- <button class="toggle">Aller Retour</button> -->
+                        <input type="text" id="search" class="form-control">
+                        <label for="search"><span class="fa fa-search"></span></label>
                     </div>
-                    <!--  -->
-                    <div class="form-group">
-                        <label for="lieu-depart">
-                            <i class="fa fa-map-marker"></i>
-                            <input type="text" placeholder="Départ de">
-                            <!-- <select name="lieu-départ" id="">
-                                <option value="">Départ de</option>
-                                <option value="">Abidjan</option>
-                            </select> -->
-                        </label>
-                        <label for="lieu-arrivee">
-                            <i class="fa fa-flag"></i>
-                            <input type="text" placeholder="Arrivée à">
-                            <!-- <select name="lieu-arrivee" id="">
-                                <option value="">Choisissez une destination</option>
-                                <option value="Bouaké">Bouaké</option>
-                            </select> -->
-                        </label>
-                    </div>
-                    <!--  -->
-                    <div class="form-group">
-                        <label for="">Date</label>
-                        <input type="date" placeholder="   /   /   ">
-                        <!-- <label for="">Date</label>
-                        <input type="date" placeholder="   /   /   "> -->
-                    </div>
-                    <!--  -->
-                    <div class="form-group">
-                        <label for="">
-                            <i class="fa fa-users"></i>
-                            <input type="text">
-                        </label>
-                        <label for="">
-                            <i class="fa fa-bus"></i>
-                            <select name="" id="" aria-placeholder="Compagnie">
-                                <option value="">UTB</option>
-                            </select>
-                        </label>
-                    </div>
-                    <button>Rechercher</button>
                 </form>
             </div>
-            <!-- Bloc floatant services -->
-            <div class="citation bordered">
-                <h3 class="label">
-                    Un peu de texte en fonction de l'image du slide
-                </h3>
-                <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ut nobis deserunt neque quas numquam quasi, sapiente sunt
-                    id vero omnis ab cumque voluptatem delectus!
-                </p>
-                <a href="#" class="readmore">
-                    En savoir plus &gt;
-                </a>
-            </div>
-            <!-- Boutons du slider -->
-            <div class="slider-buttons">
-
-            </div>
-        </section>
-        <!-- Section promotions -->
-        <section class="promotions">
-            <h2 class="title">Promotions</h2>
-            <!-- Bloc promo principale -->
-            <div class="main-promo bordered">
-                <div class="text">
-                    <h3 class="label">La saint valentin est de retour</h3>
-                    <div class="pourcentage">
-                        -90%
+        </div> <!--  -->
+    </section> <!--  -->
+    <!-- SHOWCASE -->
+    <section id="showcase">
+        <!-- Carousel container -->
+        <div class="carousel-container container-fluid">
+            <!-- Carousel -->
+            <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-slider" data-slide-to="1"></li>
+                    <li data-target="#carousel-slider" data-slide-to="2"></li>
+                </ul>
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/city-dark-lights-8047.jpg" alt="" class="img-responsive">
                     </div>
-                    <span>Sur Tous vos voyages</span>
-                    <span>Du 10 au 18 février</span>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, praesentium.</p>
+                    <div class="carousel-item">
+                        <img src="img/flying.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/senaka-cool.jpg" alt="" class="img-responsive">
+                    </div>
                 </div>
-                <div class="img bordered">
-                    <img src="img/couple-cute.jpeg" alt="" class="image">
-                </div>
-                <img src="" alt="" class="image">
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#carousel-slider" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-slider" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div> <!--  -->
+
+            <!-- Buy a ticket container -->
+            <div class="buyticket container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="content floater-div">
+                            <div class="heading">
+                                <h3>Acheter un billet</h3>
+                            </div>
+                            <!-- Formulaire -->
+                            <form action="" role="form">
+                                <!-- Aller-Retour | Aller-Simple -->
+                                <div class="btn-group btn-group-md">
+                                    <button type="button" class="btn btn-primary">Aller-Retour</button>
+                                    <button type="button" class="btn btn-default">Aller Simple</button>
+                                </div>
+                                <!-- Depart | Arrivée -->
+                                <div class="row form-group">
+                                    <div class="col-sm-6">
+                                        <label for="departure"></label>
+                                        <span class="fa fa-map-marker"></span></label>
+                                        <input type="text" id="departure" class="form-control" placeholder="Départ de">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="arrival"></label>
+                                        <span class="fa fa-flag"></span></label>
+                                        <input type="text" id="arrival" class="form-control" placeholder="Arrivée à">
+                                    </div>
+                                </div> <!--  -->
+                                <!-- Date Range -->
+                                <div class="row form-group">
+                                    <div class="col-sm-6">
+                                        <input type="date" class="form-control" placeholder="">
+                                        <label for="start-date"><span class="fa fa-calendar"></span></label>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="date" class="form-control" placeholder="">
+                                        <label for="start-date"><span class="fa fa-calendar"></span></label>
+                                    </div>
+                                </div>
+                                <input type="submit" class="btn btn-primary" value="Rechercher">
+                            </form>
+                        </div>
+                    </div> <!-- col-md-5 -->
+                    <div class="col-md-5">
+                        <div class="content floater-div">
+                            <div class="heading">
+                                <h5>Un peu de texte en fonction de l'image du slide</h5>
+                                <p>Ca peut parler de la rapidité du service de libraison, du suivi en temps réel de la position
+                                    du car, de la sécurité du transport, du professionalisme des employés, des services à
+                                    bord, bref
+                                </p>
+                                <a href="" class="button-more">Découvrir</a>
+                            </div>
+                        </div>
+
+                    </div> <!-- col-md-5 -->
+                </div> <!-- Row -->
+            </div> <!-- Container -->
+        </div> <!-- Carousel container -->
+    </section> <!--  -->
+    <!-- PROMOTIONS -->
+    <section id="promotions">
+        <div class="container">
+            <div class="heading">
+                <h2>Promotions</h2>
             </div>
-            <!-- Container pour promo secondaires -->
-            <div class="container">
-                <!-- Bloc promo secondaire -->
-                <div class="promo bordered bg" id="promo1">
-                    <h4 class="label">Destination</h4>
-                    <div class="pourcentage">-30%</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam incidunt, aspernatur pariatur.</p>
-                    <a href="" class="readmore">J'en profite ! &gt;</a>
+            <!-- Main Promo -->
+            <div class="container col-md-10">
+                <div class="col-md-8">
+                    <div class="heading">
+                        <h5>Promo Saint Valentin</h5>
+                    </div>
+                    <div class="content">
+                        <p>-90%</p>
+                    </div>
+                    <div class="text">
+                        <p>Lorem un peu de texte attirant à propos de la promotion</p>
+                    </div>
                 </div>
-                <!-- Bloc promo secondaire -->
-                <div class="promo bordered bg" id="promo2">
-                    <h4 class="label">Destination</h4>
-                    <div class="pourcentage">-30%</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam incidunt, aspernatur pariatur.</p>
-                    <a href="" class="readmore">J'en profite ! &gt;</a>
+                <!-- Image de la promo -->
+                <div class="col-md-4">
+                    <img src="" alt="" class="img-responsive">
                 </div>
-                <!-- Bloc promo secondaire -->
-                <div class="promo bordered bg"  id="promo3">
-                    <h4 class="label">Destination</h4>
-                    <div class="pourcentage">-30%</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam incidunt, aspernatur pariatur.</p>
-                    <a href="" class="readmore">J'en profite ! &gt;</a>
+            </div><!-- Main Promo -->
+            <!-- Aux Promo container -->
+            <div class="container col-md-10 col-md-offset-1">
+                <!-- Promo block -->
+                <div class="col-md">
+                    <div class="heading">
+                        <h6>Destination</h6>
+                    </div>
+                    <div class="content">
+                        <p>-33%</p>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias explicabo pariatur ex doloribus
+                            velit tempore animi nostrum dicta. Magni, natus.</p>
+                    </div>
+                    <a href="" class="button-more">J'en profite ! </a>
+                </div> <!--  -->
+                <!-- Promo block -->
+                <div class="col-md">
+                    <div class="heading">
+                        <h6>Destination</h6>
+                    </div>
+                    <div class="content">
+                        <p>-33%</p>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias explicabo pariatur ex doloribus
+                            velit tempore animi nostrum dicta. Magni, natus.</p>
+                    </div>
+                    <a href="" class="button-more">J'en profite ! </a>
+                </div> <!--  -->
+                <!-- Promo block -->
+                <div class="col-md">
+                    <div class="heading">
+                        <h6>Destination</h6>
+                    </div>
+                    <div class="content">
+                        <p>-33%</p>
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias explicabo pariatur ex doloribus
+                            velit tempore animi nostrum dicta. Magni, natus.</p>
+                    </div>
+                    <a href="" class="button-more">J'en profite ! </a>
+                </div> <!--  -->
+                <div class="row">
+                    <p>Voir toutes les Promos</p>
+                    <a href=""><span class="fa fa-chevron-down"></span></a>
                 </div>
+            </div><!-- Aux Promo -->
+        </div><!--  -->
+    </section> <!--  -->
+    <!-- DESTINATIONS -->
+    <section id="destinations">
+        <div class="container">
+            <div class="header">
+                <h2>Meilleures destinations</h2>
             </div>
-            <a href="" class="readmore redirect">
-                Plus de promos
-            </a>
-        </section>
-        <!-- Section destinations -->
-        <section class="destinations">
-            <h2 class="title">Meilleures destinations</h2>
-            <div class="container">
-                <!-- Bloc destination -->
-                <div class="destination bordered">
-                    <span class="price">
-                        A partir de 6000 F
-                    </span>
-                    <span class="lieu">
-                        Daloa, Côte d'Ivoire
-                    </span>
-                </div>
-                <!-- Bloc destination -->
-                <div class="destination bordered">
-                    <span class="price">
-                        A partir de 12000 F
-                    </span>
-                    <span class="lieu">
-                        Korhogo
-                    </span>
-                </div>
-                <!-- Bloc destination -->
-                <div class="destination bordered">
-                    <span class="price">
-                        A partir de 26000 F
-                    </span>
-                    <span class="lieu">
-                        Accra, Ghana
-                    </span>
-                </div>
-            </div>
-            <a href="" class="readmore redirect">
-                Plus de promos
-            </a>
-        </section>
-        <!-- Section newsletter -->
-        <section class="newsletter">
-            <div class="text">
-                <h4 class="label">
-                    Souscrivez à notre newsletter
-                </h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, nostrum.</p>
-            </div>
-            <form action="">
-                <input type="email">
-                <button>souscrire</button>
-            </form>
-        </section>
-    </main>
-    <!-- Pied -->
-    <footer>
-        <div class="footline">
-            Powered by sotli
         </div>
+        <!-- Destinations container -->
+        <div class="container col-md-10 col-md-offset-1">
+            <!-- Destination block -->
+            <div class="col-md">
+                <div class="price">
+                    A partir de 6000F
+                </div>
+                <div class="destination">Daloa, Côte d'Ivoire</div>
+            </div> <!--  -->
+            <!-- Destination block -->
+            <div class="col-md">
+                <div class="price">
+                    A partir de 6000F
+                </div>
+                <div class="destination">Daloa, Côte d'Ivoire</div>
+            </div> <!--  -->
+            <!-- Destination block -->
+            <div class="col-md">
+                <div class="price">
+                    A partir de 6000F
+                </div>
+                <div class="destination">Daloa, Côte d'Ivoire</div>
+            </div> <!--  -->
+        </div> <!--  -->
+        <div class="row">
+            <p>Voir toutes les destinations</p>
+            <a href=""><span class="fa fa-chevron-down"></span></a>
+        </div>
+    </section> <!--  -->
+    <!-- NEWSLETTER -->
+    <section id="newsletter">
+        <div class="container-fluid">
+            <div class="col-md-8">
+                <div class="heading">
+                    <h6>Souscrivez à notre newsletter</h6>
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam molestias odit qui ullam
+                        ipsa exercitationem eius, nemo nesciunt beatae.</p>
+                </div>
+            </div> <!--  -->
+            <div class="col-md-4">
+                <form action="" role="form">
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Entrez votre email">
+                        <input type="submit" value="Souscrire" class="form-control">
+                    </div>
+                </form>
+            </div>
+        </div> <!--  -->
+    </section> <!--  -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="logo">
+                            <img src="" alt="" class="img-responsive">
+                        </div>
+                        <div class="text">
+                            <p>Société de réservation et de gestion des transports. Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptas, ea.</p>
+                        </div>
+                    </div> <!--  -->
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="row">
+                                <span class="fa fa-map-marker"></span>
+                                Siège social Koumassi
+                            </div>
+                            <div class="row">
+                                <span class="fa fa-phone"></span>
+                                +225 77 77 77 77
+                            </div>
+                            <div class="row">
+                                <span class="fa fa-at"></span>
+                                info@voyager.ci
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="row">
+                                <a href="facebook.com/">
+                                    <span class="fa fa-facebook"></span>
+                                </a>
+                            </div>
+                            <div class="row">
+                                <a href="twitter.com/">
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div> <!--  -->
+                </div> <!--  -->
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="heading">
+                            <h3>Service Client</h3>
+                        </div>
+                        <ul>
+                            <li><a href="">Réclammations</a></li>
+                            <li><a href="">Service baggages et objets perdus</a></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="heading">
+                            <h3>Achat en ligne</h3>
+                        </div>
+                        <ul>
+                            <li><a href="">Modalités de réservation en ligne</a></li>
+                        </ul>
+                    </div>
+                </div> <!--  -->
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="heading">
+                            <h3>Nos compagnies</h3>
+                        </div>
+                        <ul>
+                            <li><a href="">UTB</a></li>
+                            <li><a href="">Alex</a></li>
+                            <li><a href="">Drako</a></li>
+                            <li><a href="">Dorgeles TP</a></li>
+                            <li><a href="">Sonef</a></li>
+                            <li><a href="">Amane swiftlift</a></li>
+                        </ul>
+                    </div>
+                </div> <!--  -->
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <ul>
+                        <li><a href="">Mentions légales</a></li>
+                        <li><a href="">Produits &amp; Services</a></li>
+                        <li><a href="">La compagnie</a></li>
+                        <li><a href="">Signaler un abus</a></li>
+                    </ul>
+                    <div class="col-md">
+                        Copyright &copy; 2019. Tous droits réservés
+                    </div>
+                </div>
+            </div> <!--  -->
+        </div> <!--  -->
+
     </footer>
 </body>
 
