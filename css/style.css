@@ -23,8 +23,12 @@ img{
     height: auto;
     margin: auto;
 }
+/* CUSTUM CLASSSES */
 .links{
 
+}
+.heading{
+    text-align: center;
 }
 /* HEADER */
 #header ul li{
@@ -42,24 +46,32 @@ img{
 .buyticket{
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50% !important;
+    transform: translate(-50%,-50%);
+    justify-content: space-evenly;
     
 }
 .floater-div{
+    position: relative;
     border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.buyticket-form{
     background-color: #fff;
-    background-color: rgba(255, 255, 255, .8);
-    border-radius: 10px;
+}
+.advert .wrapper{
+    position: absolute;
+    z-index: -1;
+    height: 100% !important;
+    width: 100%;
+    background-color: rgba(255, 255, 255,.5) !important;
 }
 .floater-div .form-group{
     padding: 5px;
 }
 .floater-div input[type="submit"]{
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
     width: 100%;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 3px 3px;
 }
 /* PROMOTION */
 /* DESTIATION */
