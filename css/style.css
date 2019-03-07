@@ -24,6 +24,13 @@ img{
     margin: auto;
 }
 /* CUSTUM CLASSSES */
+.vl{
+  border-left: 6px solid green;
+  height: 100%;
+  position: relative;
+  margin-left: -3px;
+  top: 0;
+}
 .links{
 
 }
@@ -75,6 +82,9 @@ img{
 }
 /* PROMOTION */
 /* DESTIATION */
+.destinations-wrapper{
+    height: 200px;
+}
 .destination{
     background-image: url('../img/city-sydney.jpeg');
     background-position: center;
