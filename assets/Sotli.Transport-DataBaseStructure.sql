@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 2019 年 3 朁E07 日 15:04
+-- Generation Time: 2019 年 3 朁E07 日 15:22
 -- サーバのバージョン： 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -414,7 +414,8 @@ ALTER TABLE `conduire_un_car`
 -- テーブルの制約 `gares`
 --
 ALTER TABLE `gares`
-  ADD CONSTRAINT `gares_ibfk_1` FOREIGN KEY (`ville`) REFERENCES `villes` (`villeId`);
+  ADD CONSTRAINT `gares_ibfk_1` FOREIGN KEY (`ville`) REFERENCES `villes` (`villeId`),
+  ADD CONSTRAINT `gares_ibfk_2` FOREIGN KEY (`compagnie`) REFERENCES `compagnies` (`compagnieId`);
 
 --
 -- テーブルの制約 `promotions`
