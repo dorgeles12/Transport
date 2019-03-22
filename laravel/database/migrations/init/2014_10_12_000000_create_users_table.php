@@ -29,7 +29,8 @@ class CreateUsersTable extends Migration
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
             $table->string('city')->nullable();
-            $table->unsignedBigInteger('role_id')->nullable(); 
+            $table->unsignedBigInteger('role_id')->nullable();
+            // $table->foreign('role_id')->references('id')->on('roles');
         });
     }
 

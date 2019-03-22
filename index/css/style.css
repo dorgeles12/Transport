@@ -4,92 +4,20 @@
     --rouge:#ef040d;
     --vert:#34c924;
 }
-/* GENERAL */
-*{
-    font-family: 'Montserra', sans-serif;
+#navigation{
+    position: relative;
+    z-index: 10;
+    margin-top: -25px;
+    margin-bottom: -25px;
 }
-body{
-    padding: 5px 0;
+.carousel-item {
+    height: 500px;
 }
-ul, ol{
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
-}
-img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: auto;
-}
-/* CUSTUM CLASSSES */
-.vl{
-  border-left: 6px solid green;
-  height: 100%;
-  position: relative;
-  margin-left: -3px;
-  top: 0;
-}
-.links{
 
-}
-.heading{
-    text-align: center;
-}
-/* HEADER */
-#header ul li{
-    display: inline;
-}
-.header-top li + li:before{
-    content: "|";
-}
-/* NAVBAR */
-/* SHOWCASE */
-.carousel-container{
-    position: relative;
-}
-/* ACHETER UN BILLET */
-.buyticket{
+.carousel-item img {
     position: absolute;
-    top: 50%;
-    left: 50% !important;
-    transform: translate(-50%,-50%);
-    justify-content: space-evenly;
-    
+    top: 0;
+    left: 0;
+    min-height: 500px;
+    max-height: 500px;
 }
-.floater-div{
-    position: relative;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-.buyticket-form{
-    background-color: #fff;
-}
-.advert .wrapper{
-    position: absolute;
-    z-index: -1;
-    height: 100% !important;
-    width: 100%;
-    background-color: rgba(255, 255, 255,.5) !important;
-}
-.floater-div .form-group{
-    padding: 5px;
-}
-.floater-div input[type="submit"]{
-    width: 100%;
-    border-radius: 0 0 3px 3px;
-}
-/* PROMOTION */
-/* DESTIATION */
-.destinations-wrapper{
-    height: 200px;
-}
-.destination{
-    background-image: url('../img/city-sydney.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-/* NEWSLETTER */
-/* FOOTER */
