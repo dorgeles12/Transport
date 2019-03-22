@@ -84,25 +84,91 @@
                         <img class="d-block w-100" src="img/couple-night.jpeg" alt="Third slide">
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carousel-slider" role="button" data-slide="prev">
+                <!-- <a class="carousel-control-prev" href="#carousel-slider" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carousel-slider" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <!-- Showcase text -->
-            <div class="row h-80">
-                <div class="col-md-5">
-                    
-                </div>
-                <div class="col-md-5">
+                </a> -->
+            </div><!-- /Carousel -->
+            <!-- Show case text -->
+            <div id="showcase-overlay" class="container d-flex justify-content-between">
+                <div class="col-md-5 py-1 bg-light">
+                    <!-- Header -->
+                    <div class="row my-2">
+                        <div class="col-md-6">
+                            <h4>Acheter un billet</h4>
+                        </div>
+                        <!-- Aller-Retour | Aller-Simple -->
+                        <div class="col-md-6">
+                            <div class="btn-group btn-group-sm">
+                                <button type="button" class="btn btn-primary">Aller-Retour</button>
+                                <button type="button" class="btn btn-default">Aller Simple</button>
+                            </div>
+                        </div>
+                    </div>
 
-                </div>
-            </div>
-        </section>
+                    <!-- Formulaire -->
+                    <form action="" role="form" class="form">
+
+                        <!-- Depart | Arrivée -->
+                        <div class="row form-group">
+                            <!-- Depart -->
+                            <div class="col-sm-6 input-group">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-map-marker"></i>
+                                    </span>
+                                </div>
+                                <input type="text" id="departure" class="form-control" placeholder="Départ de">
+                            </div>
+                            <!-- Arrivee -->
+                            <div class="col-sm-6 input-group">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-flag"></i>
+                                    </span>
+                                </div>
+                                <input type="text" id="arrival" class="form-control" placeholder="Arrivée à">
+                            </div>
+                        </div> <!--  -->
+                        <!-- Date Range -->
+                        <div class="row form-group">
+                            <div class="col-sm-6">
+                                <div class="input-group">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                    </div>
+                                    <input type="date" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="input-group">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                    </div>
+                                    <input type="date" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" class="btn btn-primary w-100" value="Rechercher">
+                    </form>
+                </div> <!-- col-md-5 -->
+                <div class="col-md-5 bg-light py-2">
+                    <h5>Un peu de texte en fonction de l'image du slide</h5>
+                    <p>Ca peut parler de la rapidité du service de libraison, du suivi en temps réel de la position du car,
+                        de la sécurité du transport, du professionalisme des employés, des services à bord, bref
+                    </p>
+                    <a href="" class="btn btn-secondary w-100">Découvrir</a>
+                </div> <!-- col-md-5 -->
+            </div> <!-- Row -->
+        </section><!-- /#Showcase -->
     </main>
 </body>
 
