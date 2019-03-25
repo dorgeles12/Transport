@@ -1,0 +1,32 @@
+:root{
+    --corail:#df6d14;
+    --citrouille:#ff8100;
+    --rouge:#ef040d;
+    --vert:#34c924;
+}
+#navigation{
+    position: relative;
+    z-index: 10;
+    margin-top: -25px;
+    margin-bottom: -25px;
+}
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+    max-height: 500px;
+}
+section{
+    position: relative;
+}
+#showcase-overlay{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+}
